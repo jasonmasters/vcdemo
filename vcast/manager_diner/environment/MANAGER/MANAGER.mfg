@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manage-config-options version="7">
+  <config>
+    <key>WHITEBOX</key>
+    <value>NO</value>
+    <key>COVERAGE_TYPE</key>
+    <value>STATEMENT</value>
+  </config>
+</manage-config-options>

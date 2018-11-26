@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="27">
+  <config>
+    <config>
+      <key>COVERAGE_TYPE</key>
+      <value>Statement+MCDC</value>
+      <key>C_DEFINE_LIST</key>
+      <value>VCAST_NO_FLOAT</value>
+    </config>
+    <search-directory type="TESTABLE_SOURCE_DIR">$(PROJ_DIR)\project\src</search-directory>
+    <search-directory type="TESTABLE_SOURCE_DIR">$(PROJ_DIR)\project\inc</search-directory>
+    <saved-logs>5</saved-logs>
+    <build-directory-naming-strategy>COMPRESSED</build-directory-naming-strategy>
+  </config>
+  <project-id>1539865146</project-id>
+  <factor-config-options>0</factor-config-options>
+  <environment name="DATABASE" type="UNIT">
+    <language>1</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>manager_diner/build/173974623</original-environment-directory>
+    </config>
+  </environment>
+  <environment name="MANAGER" type="UNIT">
+    <language>1</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>manager_diner/build/4211668324</original-environment-directory>
+    </config>
+  </environment>
+  <environment name="MANAGER_DATABASE" type="UNIT">
+    <language>1</language>
+    <is-monitored>0</is-monitored>
+    <config>
+      <original-environment-directory>manager_diner/build/2868564986</original-environment-directory>
+    </config>
+  </environment>
+  <group name="Integration_Tests">
+    <environment name="MANAGER_DATABASE"/>
+  </group>
+  <group name="Unit_Tests">
+    <environment name="DATABASE"/>
+    <environment name="MANAGER"/>
+  </group>
+  <compiler>
+    <compiler>
+      <name>VectorCAST_MinGW_C</name>
+      <config>
+        <config>
+          <key>C_COMPILER_TAG</key>
+          <value>BUILTIN_MINGW_63_C</value>
+          <key>LINT_COMMAND_LINE_OPTIONS</key>
+          <value>-b +bypclass(ansi)</value>
+          <key>KLOCWORK_EXECUTABLE_PATH</key>
+          <value>C:/dev/Klocwork/Klocwork 11.2 Command Line/bin/kwcheck.exe</value>
+          <key>KLOCWORK_SERVER_HOST</key>
+          <value>10.100.10.82</value>
+          <key>KLOCWORK_LICENSE_HOST</key>
+          <value>licenseserver</value>
+        </config>
+      </config>
+    </compiler>
+    <testsuite name="TestSuite">
+      <group name="Integration_Tests"/>
+      <group name="Unit_Tests"/>
+    </testsuite>
+  </compiler>
+</project>
